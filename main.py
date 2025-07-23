@@ -13,11 +13,8 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-# Persistent disk upload path
-UPLOAD_DIR = "/opt/render/project/src/data/uploads"
+UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
-
-# Mount uploads directory
 app.mount("/uploads", StaticFiles(directory=UPLOAD_DIR), name="uploads")
 
 # CORS setup
