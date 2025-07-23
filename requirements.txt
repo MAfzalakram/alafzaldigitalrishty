@@ -1,0 +1,6 @@
+fastapi==0.115.14
+uvicorn[standard]==0.35.0
+SQLAlchemy==2.0.41
+python-multipart==0.0.20
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
